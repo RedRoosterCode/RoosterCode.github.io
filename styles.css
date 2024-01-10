@@ -13,7 +13,10 @@ body {
 }
 
 .sidebar {
+    position: fixed;
     width: 200px;
+    height: 100%;
+    top: 200px;
     background-color: #222923;
 }
 
@@ -34,6 +37,9 @@ body {
 }
 
 .content {
+    position: relative;
+    left: 200px;
+    top: 200px;
     width: 80%;
     padding: 20px;
 }
@@ -67,12 +73,14 @@ a:focus,
 	transition:none;
 }
 .banner {
-    position: relative;
-    background: green url('banner.jpg') center/cover no-repeat;
+    position: fixed;
+    background: url('banner.jpg') center/cover no-repeat;
     height: 200px;
+    width: 100%;
     text-align: center;
     border: solid 1px;
     border-color: #0c5c19;
+    z-index: 10;
 }
 .logo {
     position: fixed;
@@ -81,7 +89,7 @@ a:focus,
     width: 200px; /* Adjust the size as needed */
     border: solid 1px;
     border-color: #0c5c19;
-	
+	z-index: 11;
 }
 
 
